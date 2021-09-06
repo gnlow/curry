@@ -7,7 +7,7 @@ type Flat<T extends any[][]> =
             : never
         : []
 
-export type V<I extends any[], O> = (...args: I) => O
+export type V<I extends any[], O> = [I, O] // Customize it!
 
 type Iv<T> = T extends V<infer I, any> ? I : never
 type Ov<T> = T extends V<any, infer O> ? O : never
