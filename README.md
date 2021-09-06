@@ -11,4 +11,4 @@ type check2 = V<[1, 3, 3], 3>   extends t1 ? true : false // false
 type check3 = V<[1, 2], 3>      extends t1 ? true : false // false
 type check4 = V<[1, 2, 3], 4>   extends t1 ? true : false // false
 ```
-Since TypeScript doesn't have higher-order generic type(microsoft/TypeScript#1213), you should copy-paste whole code to customize `V`.
+Since TypeScript doesn't have higher-order generic type([TypeScript#1213](https://github.com/microsoft/TypeScript/issues/1213)), you should copy-paste whole code to customize `V`.
